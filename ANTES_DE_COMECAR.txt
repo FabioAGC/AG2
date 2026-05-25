@@ -1,0 +1,64 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                     ⏰ LEIA ISSO EM 30 SEGUNDOS ⏰                          ║
+║                      ANTES DE ENTRAR NA SALA DO PROFESSOR                  ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+🎯 OBJETIVO DA APRESENTAÇÃO:
+   Classificador de pinguins com SVM que atinge 100% de acurácia
+
+⏱️ TEMPO TOTAL: 5 MINUTOS EXATOS
+
+📋 ESTRUTURA (5 slides):
+   [0:45] Introdução → [0:45] Dataset → [1:00] Técnica (SVM)
+   → [1:00] Resultados (EXECUTE) → [1:00] Demo Interativa → [0:30] Fim
+
+🔑 PONTOS-CHAVE PARA DECORAR:
+
+   1️⃣ INTRODUÇÃO:
+      "AG2 - classificador de 3 espécies de pinguins"
+
+   2️⃣ DATASET:
+      "5 features: bico (2), nadadeira, peso, ilha e sexo"
+
+   3️⃣ TÉCNICA:
+      "Pipeline: StandardScaler → SVM com GridSearchCV 5-fold"
+
+   4️⃣ RESULTADOS:
+      "Acurácia teste: 100% | CV: 99.63%"
+      "Hiperparâmetros: C=1, kernel=poly, gamma=scale"
+
+   5️⃣ DEMO:
+      "Exemplo 1: Island=0, Sex=1, 39, 17, 190, 3800 → Adelie ✓"
+      "Exemplo 2: Island=0, Sex=0, 50, 17, 240, 5500 → Gentoo ✓"
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ CHECKLIST PRÉ-APRESENTAÇÃO:
+
+   [ ] Script testado? (python penguim.py)
+   [ ] Dependências instaladas? (pandas, scikit-learn)
+   [ ] Terminal preparado?
+   [ ] Exemplos memorizados?
+   [ ] Respire fundo!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📚 DOCUMENTOS DE REFERÊNCIA:
+
+   • APRESENTACAO_AG2.md ........... Script completo com tudo a dizer
+   • GUIA_RAPIDO_APRESENTACAO.txt .. Resumo de 1 página com pontos-chave
+   • DADOS_REAIS_EXECUCAO.txt ...... Tabelas com métricas reais
+   • ANTES_DE_COMECAR.txt .......... Este arquivo (leitura rápida)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💪 VOCÊ ESTÁ PRONTO!
+
+   ✓ Projeto funcional (100% de acurácia!)
+   ✓ Scripts prontos
+   ✓ Exemplos testados
+   ✓ Documentação completa
+
+BOA SORTE! 🚀 VOCÊ VAI ARRASAR!
+
+═══════════════════════════════════════════════════════════════════════════════

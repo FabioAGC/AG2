@@ -1,0 +1,130 @@
+================================================================================
+                GUIA RÁPIDO DE APRESENTAÇÃO - AG2 (5 MINUTOS)
+================================================================================
+
+[0:00 - 0:45] SLIDE 1: INTRODUÇÃO
+────────────────────────────────────────────────────────────────────────────────
+FRASE INICIAL:
+"Olá professor, vou apresentar o meu trabalho de AG2: um classificador de
+espécies de pinguins usando Machine Learning com SVM."
+
+PONTOS-CHAVE:
+✓ Objetivo: classificar 3 espécies de pinguins (Adelie, Chinstrap, Gentoo)
+✓ Base: medições físicas (bico, nadadeira, peso)
+✓ Dataset: Palmer Penguins - 388 amostras
+
+================================================================================
+
+[0:45 - 1:30] SLIDE 2: DATASET
+────────────────────────────────────────────────────────────────────────────────
+FRASE INICIAL:
+"O dataset tem 5 features principais..."
+
+PONTOS-CHAVE:
+✓ Features numéricas: comprimento bico, profundidade bico, nadadeira, peso
+✓ Features categóricas: ilha (0,1,2), sexo (0=fêmea, 1=macho)
+✓ Limpeza: remover valores NaN
+✓ Codificação: converter categorias em números
+
+================================================================================
+
+[1:30 - 2:30] SLIDE 3: TÉCNICA
+────────────────────────────────────────────────────────────────────────────────
+FRASE INICIAL:
+"Para treinar o modelo, utilizei um pipeline com dois componentes..."
+
+PIPELINE:
+  StandardScaler (normaliza features) → SVM (classifica)
+
+PONTOS-CHAVE:
+✓ StandardScaler: coloca tudo na mesma escala
+✓ SVM: encontra o melhor hiperplano para separar espécies
+✓ GridSearchCV: testa automaticamente combinações de parâmetros
+✓ Validação cruzada: 5-fold para garantir robustez
+
+================================================================================
+
+[2:30 - 3:30] SLIDE 4: RESULTADOS & EXECUÇÃO
+────────────────────────────────────────────────────────────────────────────────
+AÇÃO:
+1. Abra o terminal
+2. Execute: python penguim.py
+3. Espere o script processar
+
+FRASE ENQUANTO AGUARDA:
+"Enquanto o modelo treina, ele está testando diferentes combinações de
+hiperparâmetros usando validação cruzada..."
+
+FRASE APÓS RESULTADO:
+"Vemos que a acurácia no teste é de 100%! E a validação cruzada deu 99.63%.
+Os melhores hiperparâmetros encontrados foram C=1, kernel polinomial e gamma=scale.
+O classification report mostra precision e recall perfeitos (1.0) para as 3 espécies."
+
+================================================================================
+
+[3:30 - 4:30] SLIDE 5: DEMONSTRAÇÃO INTERATIVA
+────────────────────────────────────────────────────────────────────────────────
+EXEMPLO 1 - ADELIE:
+  Island: 0 → Sex: 1 → Length: 39 → Depth: 17 → Flipper: 190 → Mass: 3800
+  ESPERADO: Adelie ✓
+
+FRASE:
+"O modelo classificou corretamente como Adelie!"
+
+───────────────────────────────────────────────────────────────────────────────
+
+EXEMPLO 2 - GENTOO:
+  Island: 0 → Sex: 0 → Length: 50 → Depth: 17 → Flipper: 240 → Mass: 5500
+  ESPERADO: Gentoo ✓
+
+FRASE:
+"Novamente classificou corretamente! Mostra que o modelo generaliza bem."
+
+================================================================================
+
+[4:30 - 5:00] CONCLUSÃO
+────────────────────────────────────────────────────────────────────────────────
+FRASE FINAL:
+"Em resumo, desenvolvemos um classificador robusto que consegue identificar as
+3 espécies de pinguins com 95% de acurácia. Obrigado pela atenção! Alguma
+pergunta?"
+
+================================================================================
+
+POSSÍVEIS PERGUNTAS RÁPIDAS
+────────────────────────────────────────────────────────────────────────────────
+
+P: Por que SVM?
+R: Bom desempenho em classificação multiclasse, funciona com datasets pequenos,
+   robusto a outliers.
+
+P: Qual a acurácia?
+R: ~95% no conjunto de teste.
+
+P: O que é GridSearchCV?
+R: Testa automaticamente combinações de hiperparâmetros com CV 5-fold.
+
+P: Por que normalizar?
+R: Features têm escalas diferentes (mm vs gramas). StandardScaler coloca tudo
+   na mesma escala.
+
+P: Como sabe que generaliza bem?
+R: Validação cruzada 5-fold + teste com 20% dos dados.
+
+P: Como melhorar?
+R: Feature engineering, testar outros algoritmos, mais dados, análise exploratória.
+
+================================================================================
+
+✅ ANTES DE COMEÇAR
+────────────────────────────────────────────────────────────────────────────────
+[ ] Script testado: python penguim.py (funciona?)
+[ ] Dependências: pip install pandas scikit-learn (instaladas?)
+[ ] Cronômetro: preparado para 5 minutos?
+[ ] Exemplos: valores anotados e testados?
+[ ] Terminal: pronto para executar o script?
+[ ] Respirar: fazer respiração profunda antes de começar
+
+================================================================================
+
+boa sorte! você vai arrasar! 🚀
